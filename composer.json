@@ -1,0 +1,26 @@
+{
+    "name": "nessie/project",
+    "type": "project",
+    "description": "",
+    "license": "",
+    "authors": [
+        {
+            "name": ""
+        }
+    ],
+    "require": {
+      "nessie/core": "@dev"
+    },
+    "require-dev": {
+      "pds/skeleton": "^1.0"
+    },
+      "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/NessiePHP/Nessie.Core"
+      }
+    ],
+    "scripts": {
+      "post-autoload-dump": "Nessie\\Core\\Composer::updatePublicFolder"
+    }
+}
