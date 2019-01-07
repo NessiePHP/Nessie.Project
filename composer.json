@@ -8,6 +8,8 @@
             "name": ""
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
       "nessie/core": "@dev"
     },
@@ -21,6 +23,7 @@
       }
     ],
     "scripts": {
+      "post-create-project-cmd": "vendor/bin/pds-skeleton generate",
       "post-autoload-dump": "Nessie\\Core\\Composer::updatePublicFolder"
     }
 }
